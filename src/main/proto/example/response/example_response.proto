@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package example.response;
+
+import "google/protobuf/wrappers.proto";
+
+option java_package = "com.edu.example.response";
+option java_outer_classname = "ExampleResponseProto";
+
+message ExampleResponse {
+  // Id of the example
+  google.protobuf.Int64Value example_id = 1;
+}
